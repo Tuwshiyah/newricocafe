@@ -28,10 +28,11 @@ import {
   Flame,
   Cherry,
   LeafyGreen,
-  Ham,
   Layers,
-  CircleDot
+  CircleDot,
+  Icon
 } from 'lucide-react-native';
+import { burger } from '@lucide/lab';
 
 interface CategoryTabProps {
   category: Category;
@@ -53,7 +54,7 @@ const getCategoryIcon = (name: string, isActive: boolean) => {
     return <Soup size={iconSize} color={iconColor} />;
   }
   if (lowerName.includes('burger')) {
-    return <Ham size={iconSize} color={iconColor} />;
+    return <Icon iconNode={burger} size={iconSize} color={iconColor} />;
   }
   if (lowerName.includes('sandwich')) {
     return <Sandwich size={iconSize} color={iconColor} />;
