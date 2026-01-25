@@ -19,7 +19,18 @@ import {
   Salad,
   Soup,
   Cake,
-  GlassWater
+  GlassWater,
+  Drumstick,
+  Shell,
+  Citrus,
+  CupSoda,
+  Martini,
+  Flame,
+  Cherry,
+  LeafyGreen,
+  Ham,
+  Layers,
+  CircleDot
 } from 'lucide-react-native';
 
 interface CategoryTabProps {
@@ -35,32 +46,71 @@ const getCategoryIcon = (name: string, isActive: boolean) => {
   const iconSize = 24;
   const lowerName = name.toLowerCase();
 
-  if (lowerName.includes('burger') || lowerName.includes('sandwich')) {
+  if (lowerName.includes('salade') || lowerName.includes('salad')) {
+    return <Salad size={iconSize} color={iconColor} />;
+  }
+  if (lowerName.includes('entree') || lowerName.includes('entrée')) {
+    return <Soup size={iconSize} color={iconColor} />;
+  }
+  if (lowerName.includes('burger')) {
+    return <Ham size={iconSize} color={iconColor} />;
+  }
+  if (lowerName.includes('sandwich')) {
     return <Sandwich size={iconSize} color={iconColor} />;
+  }
+  if (lowerName.includes('pate') || lowerName.includes('pâte') || lowerName.includes('pasta')) {
+    return <Utensils size={iconSize} color={iconColor} />;
+  }
+  if (lowerName.includes('viande') || lowerName.includes('grill')) {
+    return <Beef size={iconSize} color={iconColor} />;
+  }
+  if (lowerName.includes('volaille') || lowerName.includes('poulet') || lowerName.includes('chicken')) {
+    return <Drumstick size={iconSize} color={iconColor} />;
+  }
+  if (lowerName.includes('fruit') && lowerName.includes('mer') || lowerName.includes('seafood')) {
+    return <Shell size={iconSize} color={iconColor} />;
+  }
+  if (lowerName.includes('poisson') || lowerName.includes('fish')) {
+    return <Fish size={iconSize} color={iconColor} />;
+  }
+  if (lowerName.includes('africain') || lowerName.includes('plat')) {
+    return <Utensils size={iconSize} color={iconColor} />;
+  }
+  if (lowerName.includes('combo')) {
+    return <Layers size={iconSize} color={iconColor} />;
+  }
+  if (lowerName.includes('accompagnement') || lowerName.includes('side')) {
+    return <LeafyGreen size={iconSize} color={iconColor} />;
+  }
+  if (lowerName.includes('cocktail')) {
+    return <Martini size={iconSize} color={iconColor} />;
+  }
+  if (lowerName.includes('jus') || lowerName.includes('juice')) {
+    return <Citrus size={iconSize} color={iconColor} />;
+  }
+  if (lowerName.includes('boisson') && lowerName.includes('froid')) {
+    return <CupSoda size={iconSize} color={iconColor} />;
+  }
+  if (lowerName.includes('boisson') && lowerName.includes('chaud') || lowerName.includes('cafe') || lowerName.includes('café') || lowerName.includes('coffee')) {
+    return <Coffee size={iconSize} color={iconColor} />;
   }
   if (lowerName.includes('boisson') || lowerName.includes('drink')) {
     return <GlassWater size={iconSize} color={iconColor} />;
   }
-  if (lowerName.includes('cafe') || lowerName.includes('coffee') || lowerName.includes('café')) {
-    return <Coffee size={iconSize} color={iconColor} />;
-  }
-  if (lowerName.includes('dessert') || lowerName.includes('sweet')) {
+  if (lowerName.includes('dessert')) {
     return <IceCream size={iconSize} color={iconColor} />;
+  }
+  if (lowerName.includes('milkshake') || lowerName.includes('shake')) {
+    return <CupSoda size={iconSize} color={iconColor} />;
+  }
+  if (lowerName.includes('shisha') || lowerName.includes('chicha') || lowerName.includes('hookah')) {
+    return <CircleDot size={iconSize} color={iconColor} />;
   }
   if (lowerName.includes('vin') || lowerName.includes('wine') || lowerName.includes('alcool')) {
     return <Wine size={iconSize} color={iconColor} />;
   }
   if (lowerName.includes('pizza')) {
     return <Pizza size={iconSize} color={iconColor} />;
-  }
-  if (lowerName.includes('viande') || lowerName.includes('meat') || lowerName.includes('grill')) {
-    return <Beef size={iconSize} color={iconColor} />;
-  }
-  if (lowerName.includes('poisson') || lowerName.includes('fish') || lowerName.includes('seafood')) {
-    return <Fish size={iconSize} color={iconColor} />;
-  }
-  if (lowerName.includes('salade') || lowerName.includes('salad')) {
-    return <Salad size={iconSize} color={iconColor} />;
   }
   if (lowerName.includes('soupe') || lowerName.includes('soup')) {
     return <Soup size={iconSize} color={iconColor} />;
