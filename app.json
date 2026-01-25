@@ -17,7 +17,8 @@
       "favicon": "./assets/images/favicon.png",
       "display": "fullscreen",
       "themeColor": "#000000",
-      "backgroundColor": "#000000"
+      "backgroundColor": "#000000",
+      "lang": "fr"
     },
     "plugins": ["expo-router", "expo-font", "expo-web-browser"],
     "experiments": {
