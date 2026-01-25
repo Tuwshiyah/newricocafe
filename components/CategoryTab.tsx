@@ -32,7 +32,7 @@ import {
   CircleDot,
   Icon
 } from 'lucide-react-native';
-import { burger } from '@lucide/lab';
+import { burger, bowlChopsticks } from '@lucide/lab';
 
 interface CategoryTabProps {
   category: Category;
@@ -60,7 +60,7 @@ const getCategoryIcon = (name: string, isActive: boolean) => {
     return <Sandwich size={iconSize} color={iconColor} />;
   }
   if (lowerName.includes('pate') || lowerName.includes('pâte') || lowerName.includes('pasta')) {
-    return <Utensils size={iconSize} color={iconColor} />;
+    return <Icon iconNode={bowlChopsticks} size={iconSize} color={iconColor} />;
   }
   if (lowerName.includes('viande') || lowerName.includes('grill')) {
     return <Beef size={iconSize} color={iconColor} />;
