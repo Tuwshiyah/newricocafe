@@ -1,0 +1,746 @@
+{
+  "restaurant": {
+    "name": "Restaurant Rico",
+    "currency": "FCFA",
+    "currencySymbol": "F"
+  },
+  "menu": {
+    "entrees": {
+      "label": "Entrées",
+      "categories": {
+        "froides": {
+          "label": "Entrées Froides",
+          "items": [
+            {
+              "id": "ef001",
+              "name": "Salade César",
+              "price": 8000,
+              "description": "Iceberg, blanc de poulet 150g, parmesan"
+            },
+            {
+              "id": "ef002",
+              "name": "Salade Avocat Crevette",
+              "price": 8000,
+              "description": "Sauce cocktail"
+            }
+          ]
+        },
+        "chaudes": {
+          "label": "Entrées Chaudes",
+          "items": [
+            {
+              "id": "ec001",
+              "name": "Frites Rico",
+              "price": 5000,
+              "description": "Crème champignons, fromage parmesan"
+            },
+            {
+              "id": "ec002",
+              "name": "Chicken Tender",
+              "price": 6000,
+              "description": "Sauce Honey Master"
+            },
+            {
+              "id": "ec003",
+              "name": "Ailes de Poulet Braisé",
+              "price": 6000,
+              "description": "Sauce barbecue"
+            }
+          ]
+        }
+      }
+    },
+    "sandwichs": {
+      "label": "Nos Sandwichs",
+      "items": [
+        {
+          "id": "sw001",
+          "name": "Sandwich Poulet",
+          "price": 6000,
+          "description": "Poulet braisé, sauce mayo ail, salade"
+        },
+        {
+          "id": "sw002",
+          "name": "Fahita Poulet",
+          "price": 6000,
+          "description": "Blanc de poulet mariné, poivrons vert, maïs, oignons, sauce piquante"
+        },
+        {
+          "id": "sw003",
+          "name": "Fahita Viande",
+          "price": 6000,
+          "description": "Émincés de bœuf mariné, poivrons vert, maïs, oignons, sauce piquante"
+        },
+        {
+          "id": "sw004",
+          "name": "Sandwich Steak",
+          "price": 9000,
+          "description": "Entrecôte de bœuf, sauce pesto, fromage mozzarella"
+        }
+      ]
+    },
+    "burgers": {
+      "label": "Burgers",
+      "items": [
+        {
+          "id": "bg001",
+          "name": "Classic Burger",
+          "price": 7000,
+          "description": "Viande hachée, salade, tomates, oignons"
+        },
+        {
+          "id": "bg002",
+          "name": "Cheese Burger",
+          "price": 8000,
+          "description": "Viande hachée, salade verte, salade coleslaw, cheddar, sauce maison"
+        },
+        {
+          "id": "bg003",
+          "name": "Burger Rico",
+          "price": 9000,
+          "description": "2 viande 100g, double fromage, champignons de Paris, sauce barbecue, salade iceberg"
+        },
+        {
+          "id": "bg004",
+          "name": "Chicken Burger",
+          "price": 8000,
+          "description": "Blanc de poulet, salade verte, cheddar, sauce maison"
+        },
+        {
+          "id": "bg005",
+          "name": "Double Mozzarella",
+          "price": 10000,
+          "description": "2 smatch viande, mozzarella pané, jambon de boeuf, cheddar, salade verte"
+        },
+        {
+          "id": "bg006",
+          "name": "Zinger Burger",
+          "price": 9000,
+          "description": "Poulet crunchy, gelapeño, cheddar, salade verte"
+        },
+        {
+          "id": "bg007",
+          "name": "Burger Extincteur",
+          "price": 9000,
+          "description": "2 viandes 100g, 2 fromages, oignons frais, piment ++",
+          "tags": ["spicy"]
+        },
+        {
+          "id": "bg008",
+          "name": "Burger Black Angus",
+          "price": 10000,
+          "description": "Viande 150g Black Angus, salade, cornichon, fromage emmental, sauce crème champignons",
+          "tags": ["premium"]
+        },
+        {
+          "id": "bg009",
+          "name": "Burger Wagyu",
+          "price": 15000,
+          "description": "Viande 150g Wagyu, tranche d'oignon, salade verte, jambon de bœuf, fromage emmental, sauce crème champignons",
+          "tags": ["premium"]
+        }
+      ]
+    },
+    "pates": {
+      "label": "Nos Pâtes",
+      "items": [
+        {
+          "id": "pt001",
+          "name": "Tagliatelles Poulet",
+          "price": 8000,
+          "description": null
+        },
+        {
+          "id": "pt002",
+          "name": "Spaghetti Bolognaise",
+          "price": 6000,
+          "description": null
+        },
+        {
+          "id": "pt003",
+          "name": "Tagliatelle aux Gambas",
+          "price": 12000,
+          "description": null
+        },
+        {
+          "id": "pt004",
+          "name": "Spaghetti Crevettes",
+          "price": 10000,
+          "description": null
+        }
+      ]
+    },
+    "pizzas": {
+      "label": "Pizzas",
+      "items": [
+        {
+          "id": "pz001",
+          "name": "Pizza Calabraise",
+          "price": 11000,
+          "description": null
+        },
+        {
+          "id": "pz002",
+          "name": "Pizza Royal",
+          "price": 8500,
+          "description": null
+        },
+        {
+          "id": "pz003",
+          "name": "Pizza Reine",
+          "price": 8000,
+          "description": null
+        },
+        {
+          "id": "pz004",
+          "name": "Pizza Rico",
+          "price": 9000,
+          "description": null
+        },
+        {
+          "id": "pz005",
+          "name": "Pizza Peperoni",
+          "price": 10000,
+          "description": null
+        },
+        {
+          "id": "pz006",
+          "name": "Pizza Margherita",
+          "price": 7000,
+          "description": null
+        },
+        {
+          "id": "pz007",
+          "name": "Pizza Mexicaine",
+          "price": 8500,
+          "description": null
+        },
+        {
+          "id": "pz008",
+          "name": "Pizza Poulet",
+          "price": 9000,
+          "description": null
+        }
+      ]
+    },
+    "plats": {
+      "label": "Nos Plats",
+      "categories": {
+        "viandes": {
+          "label": "Viandes",
+          "items": [
+            {
+              "id": "pl001",
+              "name": "Filet de Bœuf IMP",
+              "price": 16000,
+              "description": "250g - 300g / accompagnement au choix"
+            },
+            {
+              "id": "pl002",
+              "name": "Entrecôte Extra",
+              "price": 14000,
+              "description": "350g - 390g / accompagnement au choix"
+            },
+            {
+              "id": "pl003",
+              "name": "Entrecôte Black Angus",
+              "price": 25000,
+              "description": "300g - 300g / accompagnement au choix",
+              "tags": ["premium"]
+            },
+            {
+              "id": "pl004",
+              "name": "Entrecôte Wagyu",
+              "price": 40000,
+              "description": "250g - 300g / accompagnement au choix",
+              "tags": ["premium"]
+            },
+            {
+              "id": "pl005",
+              "name": "Côtelettes d'Agneau IMP (500g)",
+              "price": 25000,
+              "description": "500g / accompagnement au choix"
+            },
+            {
+              "id": "pl006",
+              "name": "Côtelettes d'Agneau IMP (1kg)",
+              "price": 40000,
+              "description": "1kg / accompagnement au choix"
+            },
+            {
+              "id": "pl007",
+              "name": "Choucouya de Mouton",
+              "price": 13000,
+              "description": "250g - 300g / accompagnement au choix"
+            },
+            {
+              "id": "pl008",
+              "name": "Chawarma à l'Ivoirienne",
+              "price": 9000,
+              "description": "Mix d'émincer de bœuf & poulet aux épices d'Afrique"
+            },
+            {
+              "id": "pl009",
+              "name": "Brochettes Mix",
+              "price": 12000,
+              "description": null
+            }
+          ]
+        },
+        "poulet": {
+          "label": "Poulet",
+          "items": [
+            {
+              "id": "pl010",
+              "name": "Demi Poulet Braisé",
+              "price": 8000,
+              "description": "250g - 300g / accompagnement au choix"
+            },
+            {
+              "id": "pl011",
+              "name": "Blanc de Poulet Braisé",
+              "price": 8000,
+              "description": "250g - 300g blanc de poulet, accompagnement au choix"
+            },
+            {
+              "id": "pl012",
+              "name": "Kedjenou de Poulet",
+              "price": 7000,
+              "description": null
+            },
+            {
+              "id": "pl013",
+              "name": "Choukouya Poulet",
+              "price": 8000,
+              "description": null
+            },
+            {
+              "id": "pl014",
+              "name": "Crispy",
+              "price": 8000,
+              "description": null
+            }
+          ]
+        },
+        "poissons": {
+          "label": "Poissons & Fruits de Mer",
+          "items": [
+            {
+              "id": "pl015",
+              "name": "Gambas Braisé",
+              "price": 16000,
+              "description": null
+            },
+            {
+              "id": "pl016",
+              "name": "Filet de Mérou Pané",
+              "price": 12000,
+              "description": "Sauce tartare"
+            },
+            {
+              "id": "pl017",
+              "name": "Duo de Mérou et Crevettes",
+              "price": 18000,
+              "description": "Sauce maison"
+            }
+          ]
+        },
+        "autres": {
+          "label": "Autres",
+          "items": [
+            {
+              "id": "pl018",
+              "name": "Garba Rico",
+              "price": 7000,
+              "description": null
+            },
+            {
+              "id": "pl019",
+              "name": "Accompagnement",
+              "price": 2000,
+              "description": "Frites, pommes sautées, alloco, attiéké, riz blanc, légumes sautés, purée de pomme de terre"
+            }
+          ]
+        }
+      }
+    },
+    "combos": {
+      "label": "Nos Combos",
+      "items": [
+        {
+          "id": "cb001",
+          "name": "Famille (5 pers)",
+          "price": 60000,
+          "description": "Demi poulet, choucouya de mouton, filet de bœuf, entrecôte, burger classique, chicken burger, poulet désossé, frite alloco",
+          "serves": 5
+        },
+        {
+          "id": "cb002",
+          "name": "Amis (3 pers)",
+          "price": 40000,
+          "description": "Demi poulet, choucouya de mouton, filet de bœuf, entrecôte, frite alloco",
+          "serves": 3
+        },
+        {
+          "id": "cb003",
+          "name": "Croquant (2 pers)",
+          "price": 20000,
+          "description": "Chicken tender, gambas pané, ailes de poulet pané, alloco, frites",
+          "serves": 2
+        },
+        {
+          "id": "cb004",
+          "name": "Combo de Mer",
+          "price": 35000,
+          "description": "Les choix: Langouste, gambas, calamar, filet de poisson, crabe. Vous avez droit à 2 choix, à partir du 3ème supplément 10.000F, 2 accompagnements au choix"
+        }
+      ]
+    },
+    "boissons": {
+      "label": "Boissons",
+      "categories": {
+        "cocktails": {
+          "label": "Cocktails",
+          "items": [
+            {
+              "id": "ck001",
+              "name": "Cocktail Rico",
+              "price": 5000,
+              "description": "Orange, ananas, passion et sirop de grenadine"
+            },
+            {
+              "id": "ck002",
+              "name": "Mojito",
+              "price": 5000,
+              "description": null
+            },
+            {
+              "id": "ck003",
+              "name": "Piña Colada",
+              "price": 5000,
+              "description": null
+            },
+            {
+              "id": "ck004",
+              "name": "Paradise Mentholé",
+              "price": 5000,
+              "description": "Jus d'orange, tonic, menthe glaciale"
+            },
+            {
+              "id": "ck005",
+              "name": "Coco Chanel",
+              "price": 5000,
+              "description": "Boisson énergie, tonic, sirop bleu"
+            },
+            {
+              "id": "ck006",
+              "name": "Limonade de Ciel",
+              "price": 5000,
+              "description": "Citron, gingembre, miel"
+            }
+          ]
+        },
+        "jus_frais": {
+          "label": "Jus Frais",
+          "items": [
+            {
+              "id": "jf001",
+              "name": "Jus de Pomme",
+              "price": 4000,
+              "description": null
+            },
+            {
+              "id": "jf002",
+              "name": "Jus d'Ananas",
+              "price": 4000,
+              "description": null
+            },
+            {
+              "id": "jf003",
+              "name": "Jus d'Orange",
+              "price": 4000,
+              "description": null
+            },
+            {
+              "id": "jf004",
+              "name": "Jus Passion",
+              "price": 4000,
+              "description": null
+            },
+            {
+              "id": "jf005",
+              "name": "Jus Carotte",
+              "price": 4000,
+              "description": null
+            }
+          ]
+        },
+        "chaudes": {
+          "label": "Boissons Chaudes",
+          "items": [
+            {
+              "id": "bc001",
+              "name": "Expresso",
+              "price": 2500,
+              "description": null
+            },
+            {
+              "id": "bc002",
+              "name": "Cappuccino",
+              "price": 3000,
+              "description": null
+            },
+            {
+              "id": "bc003",
+              "name": "Chocolat Chaud",
+              "price": 3000,
+              "description": null
+            },
+            {
+              "id": "bc004",
+              "name": "Café au Lait",
+              "price": 2000,
+              "description": null
+            },
+            {
+              "id": "bc005",
+              "name": "Nescafé",
+              "price": 3000,
+              "description": null
+            },
+            {
+              "id": "bc006",
+              "name": "Carafe de Thé Nature",
+              "price": 4000,
+              "description": null
+            },
+            {
+              "id": "bc007",
+              "name": "Carafe de Thé à la Menthe",
+              "price": 4000,
+              "description": null
+            },
+            {
+              "id": "bc008",
+              "name": "Carafe Thé au Gingembre",
+              "price": 5000,
+              "description": null
+            },
+            {
+              "id": "bc009",
+              "name": "Carafe de Zhourat Mélange de Fleurs",
+              "price": 5000,
+              "description": null
+            },
+            {
+              "id": "bc010",
+              "name": "Café Libanais",
+              "price": 5000,
+              "description": null
+            },
+            {
+              "id": "bc011",
+              "name": "Café Latte",
+              "price": 4000,
+              "description": null
+            }
+          ]
+        },
+        "froides": {
+          "label": "Boissons Froides",
+          "items": [
+            {
+              "id": "bf001",
+              "name": "Eau Grande",
+              "price": 1500,
+              "description": null
+            },
+            {
+              "id": "bf002",
+              "name": "Eau Petite",
+              "price": 1000,
+              "description": null
+            },
+            {
+              "id": "bf003",
+              "name": "Soda",
+              "price": 1500,
+              "description": null
+            },
+            {
+              "id": "bf004",
+              "name": "Perrier",
+              "price": 2000,
+              "description": null
+            },
+            {
+              "id": "bf005",
+              "name": "Orangina",
+              "price": 2000,
+              "description": null
+            },
+            {
+              "id": "bf006",
+              "name": "Boisson Énergisante",
+              "price": 2000,
+              "description": null
+            },
+            {
+              "id": "bf007",
+              "name": "Ice Tea Pêche",
+              "price": 3000,
+              "description": null
+            },
+            {
+              "id": "bf008",
+              "name": "Redbull",
+              "price": 4000,
+              "description": null
+            }
+          ]
+        }
+      }
+    },
+    "milkshakes": {
+      "label": "Milkshakes",
+      "items": [
+        {
+          "id": "ms001",
+          "name": "Chocolat",
+          "price": 5000,
+          "description": null
+        },
+        {
+          "id": "ms002",
+          "name": "Vanille",
+          "price": 5000,
+          "description": null
+        },
+        {
+          "id": "ms003",
+          "name": "Caramel",
+          "price": 5000,
+          "description": null
+        },
+        {
+          "id": "ms004",
+          "name": "Oréo",
+          "price": 5000,
+          "description": null
+        },
+        {
+          "id": "ms005",
+          "name": "Cérelac",
+          "price": 6000,
+          "description": null
+        }
+      ]
+    },
+    "desserts": {
+      "label": "Desserts",
+      "items": [
+        {
+          "id": "ds001",
+          "name": "Crêpes Nutella",
+          "price": 5000,
+          "description": null
+        },
+        {
+          "id": "ds002",
+          "name": "Crêpes Oréo",
+          "price": 6000,
+          "description": null
+        },
+        {
+          "id": "ds003",
+          "name": "Crêpes Kinder",
+          "price": 6000,
+          "description": null
+        },
+        {
+          "id": "ds004",
+          "name": "Crêpes 3 Chocolats",
+          "price": 5000,
+          "description": null
+        },
+        {
+          "id": "ds005",
+          "name": "Crêpes Sucre",
+          "price": 4000,
+          "description": null
+        },
+        {
+          "id": "ds006",
+          "name": "Coupe de Glace",
+          "price": 6000,
+          "description": "3 boules"
+        },
+        {
+          "id": "ds007",
+          "name": "Fondant Chocolat",
+          "price": 8000,
+          "description": null
+        },
+        {
+          "id": "ds008",
+          "name": "Crêpe Fourée",
+          "price": 7000,
+          "description": null
+        },
+        {
+          "id": "ds009",
+          "name": "Pain Perdu",
+          "price": 7000,
+          "description": null
+        },
+        {
+          "id": "ds010",
+          "name": "Plat de Fruit Rico",
+          "price": 10000,
+          "description": null
+        }
+      ]
+    },
+    "shisha": {
+      "label": "Shisha",
+      "items": [
+        {
+          "id": "sh001",
+          "name": "Pomme",
+          "price": 6000,
+          "description": null
+        },
+        {
+          "id": "sh002",
+          "name": "Raisin",
+          "price": 5000,
+          "description": null
+        },
+        {
+          "id": "sh003",
+          "name": "Raisin Menthe",
+          "price": 5000,
+          "description": null
+        },
+        {
+          "id": "sh004",
+          "name": "Citron Menthe",
+          "price": 5000,
+          "description": null
+        },
+        {
+          "id": "sh005",
+          "name": "Love 66",
+          "price": 7000,
+          "description": null
+        },
+        {
+          "id": "sh006",
+          "name": "Hawai",
+          "price": 7000,
+          "description": null
+        }
+      ]
+    }
+  }
+}
