@@ -57,7 +57,7 @@ export default function LandingPage() {
           style={styles.imageContainer}
         >
           <img
-            src="https://res.cloudinary.com/dmeochivw/image/upload/v1769199576/N2HMMGN-2_m2k75y.png"
+            src="https://tuwshiyah.b-cdn.net/ricocafe/neww.webp"
             alt="Food"
             style={styles.foodImage}
           />
@@ -133,6 +133,7 @@ const styles: Record<string, React.CSSProperties> = {
     overflow: 'hidden',
     marginBottom: spacing.lg,
     position: 'relative',
+    background: 'transparent',
   },
   foodImage: {
     width: '100%',
