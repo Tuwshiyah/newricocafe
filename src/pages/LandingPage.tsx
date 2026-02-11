@@ -56,10 +56,16 @@ export default function LandingPage() {
           transition={{ duration: 0.8, delay: 0.6 }}
           style={styles.imageContainer}
         >
-          <img
+          <motion.img
             src="https://tuwshiyah.b-cdn.net/ricocafe/neww.webp"
             alt="Food"
             style={styles.foodImage}
+            animate={{ y: [0, -15, 0] }}
+            transition={{
+              repeat: Infinity,
+              duration: 3,
+              ease: "easeInOut"
+            }}
           />
           <div style={styles.badgeContainer}>
             <motion.button

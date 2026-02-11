@@ -5,6 +5,7 @@ import { ChevronRight, ArrowLeft, Loader } from 'lucide-react';
 import { colors, spacing } from '@/constants/theme';
 import { supabase, Category } from '@/lib/supabase';
 import { getOptimizedImageUrl } from '@/lib/imageUtils';
+import { getLocalCategories, getLocalMenuItems } from '@/lib/menuData';
 import MenuHeader from '@/components/MenuHeader';
 
 interface CategoryWithCount extends Category {
@@ -23,28 +24,19 @@ export default function CategoriesPage() {
       setLoading(true);
       setError(null);
 
-      const [categoriesResult, countsResult] = await Promise.all([
-        supabase
-          .from('menu_categories')
-          .select('id, name, display_order, image_url')
-          .order('display_order'),
-        supabase
-          .from('menu_items')
-          .select('category_id'),
-      ]);
+      // Load local data instead of Supabase
+      const categoriesData = getLocalCategories();
+      const itemsData = getLocalMenuItems();
 
-      if (categoriesResult.error) throw categoriesResult.error;
-      if (countsResult.error) throw countsResult.error;
-
+      // Calculate item counts
       const countMap = new Map<string, number>();
-      (countsResult.data || []).forEach((item) => {
+      itemsData.forEach((item) => {
         countMap.set(item.category_id, (countMap.get(item.category_id) || 0) + 1);
       });
 
-      const categoriesWithCounts: CategoryWithCount[] = (categoriesResult.data || []).map(
+      const categoriesWithCounts: CategoryWithCount[] = categoriesData.map(
         (category) => ({
           ...category,
-          created_at: '',
           itemCount: countMap.get(category.id) || 0,
           imageUrl: category.image_url || null,
         })

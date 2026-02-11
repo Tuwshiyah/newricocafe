@@ -4,6 +4,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { ArrowLeft } from 'lucide-react';
 import { colors, spacing } from '@/constants/theme';
 import { supabase, Category, MenuItem } from '@/lib/supabase';
+import { getLocalCategories, getLocalMenuItems } from '@/lib/menuData';
 import MenuHeader from '@/components/MenuHeader';
 import CategoryTab from '@/components/CategoryTab';
 import MenuItemCard from '@/components/MenuItemCard';
@@ -29,26 +30,9 @@ export default function MenuPage() {
       setLoading(true);
       setError(null);
 
-      const [categoriesResult, itemsResult] = await Promise.all([
-        supabase
-          .from('menu_categories')
-          .select('id, name, display_order, image_url')
-          .order('display_order'),
-        supabase
-          .from('menu_items')
-          .select('id, category_id, name, description, price, is_featured, is_available, display_order')
-          .order('display_order'),
-      ]);
-
-      if (categoriesResult.error) throw categoriesResult.error;
-      if (itemsResult.error) throw itemsResult.error;
-
-      const cats = (categoriesResult.data || []).map((c) => ({ ...c, created_at: '' })) as Category[];
-      const items = (itemsResult.data || []).map((i) => ({
-        ...i,
-        image_url: '',
-        created_at: '',
-      })) as MenuItem[];
+      // Load local data instead of Supabase
+      const cats = getLocalCategories();
+      const items = getLocalMenuItems();
 
       setCategories(cats);
       setMenuItems(items);
@@ -95,7 +79,10 @@ export default function MenuPage() {
   }, [selectedCategory, categories, loading, scrollToCategory]);
 
   const filteredItems = useMemo(
-    () => menuItems.filter((item) => item.category_id === selectedCategory),
+    () =>
+      menuItems
+        .filter((item) => item.category_id === selectedCategory)
+        .sort((a, b) => a.display_order - b.display_order),
     [menuItems, selectedCategory]
   );
 
